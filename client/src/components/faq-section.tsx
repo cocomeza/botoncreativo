@@ -23,7 +23,7 @@ const faqData = [
   },
   {
     question: "¿Trabajan con empresas de cualquier tamaño?",
-    answer: "Sí, trabajamos desde emprendedores individuales hasta grandes corporaciones. Adaptamos nuestros servicios y propuestas según las necesidades específicas y presupuesto de cada cliente, siempre manteniendo la calidad profesional."
+    answer: "Sí, trabajamos desde emprendedores individuales y empresas. Adaptamos nuestros servicios y propuestas según las necesidades específicas y presupuesto de cada cliente, siempre manteniendo la calidad profesional."
   }
 ];
 
