@@ -6,7 +6,13 @@ import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import Footer from "@/components/footer";
 
+// Importamos el hook con todos los efectos
+import useGlobalEffects from "@/hooks/useGlobalEffects";
+
 export default function Home() {
+  // Aplicamos todos los efectos globales
+  useGlobalEffects();
+
   return (
     <div className="min-h-screen">
       <Navigation />
