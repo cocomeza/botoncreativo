@@ -19,9 +19,6 @@ export default function Footer() {
               <Palette style={{ width: '1.5rem', height: '1.5rem' }} />
               <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }} data-testid="footer-brand">Botón Creativo</h3>
             </div>
-            <p className="footer-description" data-testid="footer-description">
-              Transformamos ideas en experiencias digitales excepcionales. Tu socio creativo para el éxito online.
-            </p>
             <div className="social-links">
               <a 
                 href="#" 
@@ -150,15 +147,15 @@ export default function Footer() {
             <div>
               <div className="footer-contact-item">
                 <Mail style={{ width: '1rem', height: '1rem', color: '#bfdbfe' }} />
-                <span style={{ color: '#bfdbfe' }} data-testid="footer-email">info@botoncreativo.com</span>
+                <span style={{ color: '#bfdbfe' }} data-testid="footer-email">boton.creativo.ar@gmail.com</span>
               </div>
               <div className="footer-contact-item">
                 <SiWhatsapp style={{ width: '1rem', height: '1rem', color: '#bfdbfe' }} />
-                <span style={{ color: '#bfdbfe' }} data-testid="footer-phone">+54 9 11 1234-5678</span>
+                <span style={{ color: '#bfdbfe' }} data-testid="footer-phone">+54 9 03407 15532790</span>
               </div>
               <div className="footer-contact-item">
                 <MapPin style={{ width: '1rem', height: '1rem', color: '#bfdbfe' }} />
-                <span style={{ color: '#bfdbfe' }} data-testid="footer-location">Buenos Aires, Argentina</span>
+                <span style={{ color: '#bfdbfe' }} data-testid="footer-location">Villa Ramallo , Buenos Aires, Argentina</span>
               </div>
             </div>
           </div>
@@ -167,7 +164,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <p data-testid="footer-copyright">
-            &copy; 2024 Botón Creativo. Todos los derechos reservados.
+            &copy; 2025 Botón Creativo. Todos los derechos reservados.
           </p>
           <p className="flex items-center" data-testid="footer-credits">
             Diseñado con <span style={{ color: '#ef4444', margin: '0 0.25rem' }}>♥</span> en Argentina
