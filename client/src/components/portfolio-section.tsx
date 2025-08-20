@@ -1,34 +1,20 @@
 const portfolioItems = [
   {
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Tienda Online Premium",
-    description: "Diseño y desarrollo completo de e-commerce con sistema de pagos integrado y experiencia de usuario optimizada."
+    image: "https://i.postimg.cc/zvFF6xgv/mockups-nro3.jpg",
+    title: "Tienda Online ",
+    description: "Diseño y desarrollo, experiencia de usuario optimizada incluyendo logo, paleta de colores y manual de marca ."
   },
   {
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Identidad Corporativa",
-    description: "Desarrollo completo de identidad visual para startup tecnológica, incluyendo logo, paleta de colores y manual de marca."
+    image: "https://i.postimg.cc/T3Fgkz4Q/mockups-nro2.jpg",
+    title: "Identidad unica",
+    description: "Desarrollo completo de identidad visual para proyecto huerta comunitaria,y experiencia de usuario optimizada ."
   },
   {
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Campaña Audiovisual",
-    description: "Creación de serie de videos promocionales para lanzamiento de producto, incluyendo guión, producción y post-producción."
+    image: "https://i.postimg.cc/gJCGQDPC/mockups-nro1.jpg",
+    title: "Desarrollo web personalizado para iglesia",
+    description: "Creación de pagina Web completa para la iglesia."
   },
-  {
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Estrategia Social Media",
-    description: "Gestión integral de redes sociales para restaurante, logrando 300% de incremento en engagement y 150% en seguidores."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "App Corporativa",
-    description: "Diseño UX/UI para aplicación empresarial, optimizada para productividad y experiencia de usuario excepcional."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Material Publicitario",
-    description: "Diseño completo de campaña publicitaria para evento corporativo, incluyendo banners, flyers y material digital."
-  }
+
 ];
 
 export default function PortfolioSection() {
