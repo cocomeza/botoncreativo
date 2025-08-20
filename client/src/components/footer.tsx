@@ -151,7 +151,7 @@ export default function Footer() {
               </div>
               <div className="footer-contact-item">
                 <SiWhatsapp style={{ width: '1rem', height: '1rem', color: '#bfdbfe' }} />
-                <span style={{ color: '#bfdbfe' }} data-testid="footer-phone">+54 9 03407 15532790</span>
+                <span style={{ color: '#bfdbfe' }} data-testid="footer-phone">+54 03407 15532790</span>
               </div>
               <div className="footer-contact-item">
                 <MapPin style={{ width: '1rem', height: '1rem', color: '#bfdbfe' }} />
@@ -165,9 +165,6 @@ export default function Footer() {
         <div className="footer-bottom">
           <p data-testid="footer-copyright">
             &copy; 2025 Botón Creativo. Todos los derechos reservados.
-          </p>
-          <p className="flex items-center" data-testid="footer-credits">
-            Diseñado con <span style={{ color: '#ef4444', margin: '0 0.25rem' }}>♥</span> en Argentina
           </p>
         </div>
       </div>
