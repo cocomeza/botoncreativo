@@ -1,7 +1,7 @@
-// JavaScript for Botón Creativo - Bootstrap Version
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('mainNav');
     const content = document.querySelector('.main-content'); // Asegúrate de que esta clase apunte a tu contenedor principal
+    
     function updateNavbar() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const navbarHeight = navbar.offsetHeight;
         content.style.marginTop = `${navbarHeight + 20}px`; // Agrega un margen adicional de 20px para separación visual
     }
+    
     // Inicializa el margen al cargar la página
     updateContentMargin();
     // Inicializa la navbar
@@ -22,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Listen for scroll events
     window.addEventListener('scroll', updateNavbar);
     window.addEventListener('resize', updateContentMargin); // Actualiza el margen al redimensionar la ventana
+    
     // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('a[href^="#"]');
-    navLinks.forEach(link => {
+    const allNavLinks = document.querySelectorAll('a[href^="#"]');
+    allNavLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
@@ -51,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
     const submitBtn = contactForm.querySelector('.submit-btn');
@@ -256,17 +257,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Dynamic navbar brand color based on scroll
     const navbarBrand = document.querySelector('.navbar-brand');
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const menuNavLinks = document.querySelectorAll('.navbar-nav .nav-link');
     
     function updateNavbarColors() {
         if (window.scrollY > 50) {
             navbarBrand.style.color = 'var(--primary-blue)';
-            navLinks.forEach(link => {
+            menuNavLinks.forEach(link => {
                 link.style.color = 'var(--dark-gray)';
             });
         } else {
             navbarBrand.style.color = 'white';
-            navLinks.forEach(link => {
+            menuNavLinks.forEach(link => {
                 link.style.color = 'white';
             });
         }
