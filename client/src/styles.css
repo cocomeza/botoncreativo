@@ -135,13 +135,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Logo en pantallas grandes */
 .logo {
   height: 50px;
-  width: auto;
+  width: 50px;
 }
 
 /* Logo más chico en celulares */
 @media (max-width: 768px) {
   .logo {
     height: 35px;
+    width: 35px;
   }
 }
 
