@@ -132,6 +132,19 @@ h1, h2, h3, h4, h5, h6 {
   gap: 3rem;
 }
 
+/* Logo en pantallas grandes */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Logo más chico en celulares */
+@media (max-width: 768px) {
+  .logo {
+    height: 35px;
+  }
+}
+
 /* Navegación */
 .navigation {
   background: #0d6efd; /* azul Bootstrap */
