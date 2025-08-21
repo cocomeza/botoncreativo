@@ -12,13 +12,9 @@ import useGlobalEffects from "@/hooks/useGlobalEffects";
 export default function Home() {
   // Aplicamos todos los efectos globales
   useGlobalEffects();
-
  return (
-  <div className="min-h-screen">
-    <Navigation />
-    <div className="main-content">
-      <h1>Botón Creativo</h1>
-      <h2>Creatividad que impulsa tu negocio</h2>
+    <div className="min-h-screen">
+      <Navigation />
       <HeroSection />
       <ServicesSection />
       <PortfolioSection />
@@ -26,6 +22,7 @@ export default function Home() {
       <FaqSection />
       <Footer />
     </div>
-  </div>
-);
+  );
+}
+
 
