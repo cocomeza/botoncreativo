@@ -1,9 +1,7 @@
 // JavaScript for Botón Creativo - Bootstrap Version
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation scroll effect
     const navbar = document.getElementById('mainNav');
-    
+    const content = document.querySelector('.main-content'); // Asegúrate de que esta clase apunte a tu contenedor principal
     function updateNavbar() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -12,12 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Initial check
+    function updateContentMargin() {
+        const navbarHeight = navbar.offsetHeight;
+        content.style.marginTop = `${navbarHeight + 20}px`; // Agrega un margen adicional de 20px para separación visual
+    }
+    // Inicializa el margen al cargar la página
+    updateContentMargin();
+    // Inicializa la navbar
     updateNavbar();
     
     // Listen for scroll events
     window.addEventListener('scroll', updateNavbar);
-    
+    window.addEventListener('resize', updateContentMargin); // Actualiza el margen al redimensionar la ventana
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
@@ -46,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
     
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
