@@ -96,88 +96,114 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-    position: relative;
-    overflow: hidden;
-    color: var(--white);
-    display: flex;
-    align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  display: flex;
+  align-items: center;
 }
 
+/* Fondo decorativo */
 .hero-background {
-    position: absolute;
-    inset: 0;
-    opacity: 0.1;
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
 }
 
 .hero-background::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('data:image/svg+xml,<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,800 1000,1000"/></svg>') no-repeat center center;
-    background-size: cover;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,800 1000,1000"/></svg>') no-repeat center center;
+  background-size: cover;
 }
 
+/* Contenedor hero */
+.hero-section .container {
+  padding-top: 120px; /* espacio para navbar fijo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contenido hero */
 .hero-content {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
+  text-align: center; /* centra título y botón */
 }
 
 .hero-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 1s ease-out forwards;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 .hero-subtitle {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-    color: #bfdbfe;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 1s ease-out 0.2s forwards;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #bfdbfe;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out 0.2s forwards;
 }
 
+/* Botón hero */
 .btn-hero {
-    background-color: var(--white);
-    color: var(--primary-blue);
-    padding: 1rem 2rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 1s ease-out 0.4s forwards;
+  background-color: var(--white);
+  color: var(--primary-blue);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto; /* centra horizontalmente */
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out 0.4s forwards;
 }
 
 .btn-hero:hover {
-    background-color: #f3f4f6;
-    color: var(--primary-blue);
-    transform: scale(1.05);
-    box-shadow: var(--shadow-xl);
+  background-color: #f3f4f6;
+  color: var(--primary-blue);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
 }
 
+/* Imagen hero */
 .hero-image-container {
-    text-align: right;
+  text-align: right;
 }
 
 .hero-image {
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-xl);
-    max-width: 500px;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 1s ease-out 0.2s forwards;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  max-width: 500px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out 0.2s forwards;
 }
+
+/* ==========================
+   Animaciones
+========================== */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Sections */
 .section-title {
